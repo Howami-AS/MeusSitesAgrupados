@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus Sites</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      const pathSegments = window.location.pathname.split('/');
+      // In case of subfolder repo: /<repo-name>/...
+      const repo = pathSegments[1] ? '/' + pathSegments[1] + '/' : '/';
+      window.location.replace(window.location.origin + repo);
+    </script>
+  </head>
+  <body style="font-family: sans-serif; text-align: center; padding: 40px; background: #0f172a; color: #fff;">
+    <p>Redirecionando para o Meus Sites...</p>
+    <a href="./" style="color: #6366f1;">Clique aqui se não for redirecionado</a>
+  </body>
+</html>
