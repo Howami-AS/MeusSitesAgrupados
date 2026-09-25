@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#f1f5f9" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e1b4b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner Hub Layout with App Cards and Globe Emblem -->
+  <g filter="url(#shadow)">
+    <!-- Main Center Island -->
+    <rect x="76" y="86" width="360" height="340" rx="36" fill="url(#cardGrad)" />
+    
+    <!-- Header bar representing the browser / hub -->
+    <rect x="96" y="108" width="320" height="42" rx="14" fill="#e2e8f0" />
+    <circle cx="124" cy="129" r="6" fill="#ef4444" />
+    <circle cx="144" cy="129" r="6" fill="#f59e0b" />
+    <circle cx="164" cy="129" r="6" fill="#10b981" />
+    <!-- Mini Search bar -->
+    <rect x="188" y="117" width="210" height="24" rx="8" fill="#ffffff" />
+    <path d="M 204 129 A 4 4 0 1 1 200 125 M 203 132 L 206 135" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- 4 App Tiles representing bookmarks -->
+    <!-- Tile 1 (Globe / Web) -->
+    <rect x="108" y="174" width="136" height="110" rx="20" fill="#4F46E5" />
+    <circle cx="176" cy="229" r="28" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+    <ellipse cx="176" cy="229" rx="14" ry="28" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <line x1="148" y1="229" x2="204" y2="229" stroke="#ffffff" stroke-width="4" />
+
+    <!-- Tile 2 (Star Favorite) -->
+    <rect x="268" y="174" width="136" height="110" rx="20" fill="#F59E0B" />
+    <path d="M 336 206 L 342 222 L 359 223 L 345 233 L 350 250 L 336 239 L 322 250 L 327 233 L 313 223 L 330 222 Z" fill="#ffffff" />
+
+    <!-- Tile 3 (Folder / Category) -->
+    <rect x="108" y="302" width="136" height="104" rx="20" fill="#0EA5E9" />
+    <path d="M 152 344 L 168 344 L 176 352 L 200 352 A 4 4 0 0 1 204 356 L 204 374 A 4 4 0 0 1 200 378 L 152 378 A 4 4 0 0 1 148 374 L 148 348 A 4 4 0 0 1 152 344 Z" fill="#ffffff" />
+
+    <!-- Tile 4 (Quick Launch / Lightning) -->
+    <rect x="268" y="302" width="136" height="104" rx="20" fill="#10B981" />
+    <path d="M 340 336 L 324 358 L 336 358 L 332 378 L 348 354 L 336 354 Z" fill="#ffffff" stroke-linejoin="round" />
+  </g>
+</svg>

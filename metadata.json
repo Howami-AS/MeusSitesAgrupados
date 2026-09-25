@@ -1,0 +1,6 @@
+{
+  "name": "Meus Sites",
+  "description": "Centralizador pessoal de sites para smartphone. Organize seus sites favoritos em um único aplicativo PWA rápido, limpo e offline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
